@@ -1,13 +1,9 @@
 <?= $this->include('layout/header') ?>
 
-<style>
-.container {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-h3.section-title {
+<style>
+.section-title {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -22,7 +18,7 @@ h3.section-title {
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .skills-list li {
@@ -30,45 +26,46 @@ h3.section-title {
   color: var(--text-color);
   padding: 0.7rem 1.2rem;
   border-radius: 12px;
-  box-shadow: var(--shadow, 0 2px 8px rgba(0,0,0,0.08));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: .6rem;
+  transition: .3s ease;
   font-weight: 500;
 }
 
 .skills-list li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.20);
 }
 
-.skills-list .level-badge {
+.level-badge {
   background: var(--primary-color);
   color: #fff;
-  padding: 0.2rem 0.6rem;
+  padding: .2rem .6rem;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: .85rem;
   font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  .skills-list {
-    gap: 0.8rem;
-  }
 }
 </style>
 
-<div class="container">
+<div class="container py-5">
   <h3 class="section-title">Keahlian</h3>
-  <ul class="skills-list">
-    <?php foreach($keahlian as $k): ?>
-      <li>
-        <?= esc($k['nama_keahlian']) ?>
-        <span class="level-badge"><?= esc($k['level']) ?></span>
-      </li>
-    <?php endforeach; ?>
-  </ul>
+
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+
+      <ul class="skills-list">
+        <?php foreach($keahlian as $k): ?>
+          <li>
+            <?= esc($k['nama_keahlian']) ?>
+            <span class="level-badge"><?= esc($k['level']) ?></span>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+
+    </div>
+  </div>
 </div>
 
 <?= $this->include('layout/footer') ?>

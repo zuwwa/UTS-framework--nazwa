@@ -1,5 +1,9 @@
+<!-- BOOTSTRAP ICONS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
 <footer class="site-footer">
   <div class="footer-content">
+
     <!-- Informasi Kontak -->
     <div class="footer-section">
       <h3 class="title">Informasi Kontak</h3>
@@ -18,16 +22,38 @@
       <div class="social-links">
         <?php if (isset($sosial_media) && !empty($sosial_media)): ?>
           <?php foreach ($sosial_media as $s): ?>
+
             <a href="<?= esc($s['link']); ?>" target="_blank" class="social-link">
-              <i data-feather="external-link"></i>
+
+              <?php 
+                $platform = strtolower($s['platform']);
+                if ($platform === 'github') {
+                  echo '<i class="bi bi-github"></i>';
+                } elseif ($platform === 'linkedin') {
+                  echo '<i class="bi bi-linkedin"></i>';
+                } elseif ($platform === 'instagram') {
+                  echo '<i class="bi bi-instagram"></i>';
+                } elseif ($platform === 'facebook') {
+                  echo '<i class="bi bi-facebook"></i>';
+                } elseif ($platform === 'youtube') {
+                  echo '<i class="bi bi-youtube"></i>';
+                } elseif ($platform === 'tiktok') {
+                  echo '<i class="bi bi-tiktok"></i>';
+                } else {
+                  echo '<i class="bi bi-box-arrow-up-right"></i>';
+                }
+              ?>
+
               <?= esc($s['platform']); ?>
             </a>
+
           <?php endforeach; ?>
         <?php else: ?>
           <p>Tidak ada data sosial media</p>
         <?php endif; ?>
       </div>
     </div>
+
   </div>
 
   <hr class="footer-divider">
@@ -91,9 +117,9 @@
     margin-top: auto;
     background: var(--card-bg);
     color: var(--text-color);
-    padding: 2rem 1.5rem; /* 🔽 semula 3rem 2rem */
+    padding: 2rem 1.5rem;
     text-align: center;
-    font-size: 1.2rem; /* 🔽 semula 1.4rem */
+    font-size: 1.2rem;
     border-top: 1px solid var(--border-color);
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
     transition: background 0.3s ease, color 0.3s ease;
@@ -103,7 +129,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem; /* 🔽 semula 3rem */
+    gap: 2.5rem;
     max-width: 900px;
     margin: auto;
   }
@@ -114,7 +140,7 @@
   }
 
   .footer-section .title {
-    font-size: 1.3rem; /* 🔽 semula 1.6rem */
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
   }
@@ -137,10 +163,10 @@
     text-decoration: none;
     background: var(--card-bg-alt);
     color: var(--text-color);
-    padding: 0.4rem 0.8rem; /* 🔽 */
+    padding: 0.4rem 0.8rem;
     border-radius: 6px;
     transition: all 0.3s ease;
-    font-size: 1.2rem; /* 🔽 semula 1.4rem */
+    font-size: 1.2rem;
   }
 
   .social-link:hover {
@@ -159,7 +185,7 @@
 
   .footer-copy {
     margin: 0;
-    font-size: 1.1rem; /* 🔽 semula 1.3rem */
+    font-size: 1.1rem;
     opacity: 0.75;
   }
 

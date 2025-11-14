@@ -35,12 +35,12 @@
       padding: 0;
     }
 
-    /* Header style */
+    
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.9rem 2.5rem; /* 🔽 lebih ramping */
+      padding: 0.9rem 2.5rem; 
       background: var(--card-bg);
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       position: sticky;
@@ -49,7 +49,7 @@
     }
 
     .logo {
-      font-size: 1.6rem; /* 🔽 semula 2rem */
+      font-size: 1.6rem; 
       font-weight: 700;
       color: var(--primary-color);
       text-decoration: none;
@@ -57,7 +57,7 @@
 
     nav {
       display: flex;
-      gap: 1.5rem; /* 🔽 sedikit lebih rapat */
+      gap: 1.5rem;
     }
 
     nav a {

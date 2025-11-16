@@ -1,0 +1,508 @@
+CRITICAL - 2025-11-13 05:38:07 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 4.
+ 1 APPPATH\Views\home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 05:38:08 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 4.
+ 1 APPPATH\Views\home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 05:39:54 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 4.
+ 1 APPPATH\Views\home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 05:52:34 --> Error: Class "App\Models\SosialMediaModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:08:56 --> ErrorException: Undefined array key "tahun_mulai"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 30.
+ 1 APPPATH\Views\home.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_mulai"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:10:40 --> ErrorException: Undefined array key "tahun"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 56.
+ 1 APPPATH\Views\home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 56)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:12:14 --> ErrorException: Undefined array key "tahun"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 56.
+ 1 APPPATH\Views\home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 56)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:12:23 --> ErrorException: Undefined variable $profile
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 12.
+ 1 APPPATH\Views\home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profile', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:12:24 --> ErrorException: Undefined variable $profile
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 12.
+ 1 APPPATH\Views\home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profile', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:12:47 --> ErrorException: Undefined variable $profile
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 12.
+ 1 APPPATH\Views\home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profile', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:14:13 --> ErrorException: Undefined array key "profesi"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 12.
+ 1 APPPATH\Views\home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "profesi"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:14:14 --> ErrorException: Undefined array key "profesi"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 12.
+ 1 APPPATH\Views\home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "profesi"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:16:29 --> ErrorException: Undefined array key "periode"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 44.
+ 1 APPPATH\Views\home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "periode"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:17:33 --> ErrorException: Undefined array key "instansi"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 42.
+ 1 APPPATH\Views\home.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "instansi"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:19:09 --> ErrorException: Undefined array key "tahun"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:20:13 --> ErrorException: Undefined array key "ikon"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 87.
+ 1 APPPATH\Views\home.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ikon"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 87)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:23:22 --> ErrorException: Undefined variable $kepanitiaan
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 50.
+ 1 APPPATH\Views\home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kepanitiaan', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+ERROR - 2025-11-13 06:25:13 --> mysqli_sql_exception: Table 'cv_nazwa.kepanitiaan' doesn't exist in C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\cv-nazwa\app\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\cv-nazwa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\laragon\www\cv-nazwa\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2025-11-13 06:25:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cv_nazwa.kepanitiaan' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kepanitiaan`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:25:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cv_nazwa.kepanitiaan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kepanitiaan`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kepanitiaan`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kepanitiaan`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:25:13 --> [Caused by] mysqli_sql_exception: Table 'cv_nazwa.kepanitiaan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `kepanitiaan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kepanitiaan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kepanitiaan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kepanitiaan`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:26:58 --> Error: Class "App\Models\SosialModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:28:09 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 86.
+ 1 APPPATH\Views\home.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 86)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:29:50 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 97.
+ 1 APPPATH\Views\home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 97)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:30:08 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 95.
+ 1 APPPATH\Views\home.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php', 95)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:44:07 --> ErrorException: Undefined variable $biodata
+[Method: GET, Route: pendidikan]
+in APPPATH\Views\layout\footer.php on line 6.
+ 1 APPPATH\Views\layout\footer.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biodata', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/footer', null, true)
+ 5 APPPATH\Views\pendidikan.php(27): CodeIgniter\View\View->include('layout/footer')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\pendidikan.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('pendidikan', [], true)
+ 9 APPPATH\Controllers\Pendidikan.php(12): view('pendidikan', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendidikan->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidikan))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 06:44:19 --> ErrorException: Undefined variable $biodata
+[Method: GET, Route: pendidikan]
+in APPPATH\Views\layout\footer.php on line 6.
+ 1 APPPATH\Views\layout\footer.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biodata', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/footer', null, true)
+ 5 APPPATH\Views\pendidikan.php(27): CodeIgniter\View\View->include('layout/footer')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\pendidikan.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('pendidikan', [], true)
+ 9 APPPATH\Controllers\Pendidikan.php(12): view('pendidikan', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendidikan->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidikan))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 10:09:26 --> ErrorException: Undefined variable $biodata
+[Method: GET, Route: pendidikan]
+in APPPATH\Views\layout\footer.php on line 6.
+ 1 APPPATH\Views\layout\footer.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biodata', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/footer', null, true)
+ 5 APPPATH\Views\pendidikan.php(27): CodeIgniter\View\View->include('layout/footer')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\pendidikan.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('pendidikan', [], true)
+ 9 APPPATH\Controllers\Pendidikan.php(12): view('pendidikan', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendidikan->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidikan))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 10:11:09 --> ErrorException: Undefined variable $biodata
+[Method: GET, Route: pendidikan]
+in APPPATH\Views\layout\footer.php on line 6.
+ 1 APPPATH\Views\layout\footer.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biodata', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/footer', null, true)
+ 5 APPPATH\Views\pendidikan.php(27): CodeIgniter\View\View->include('layout/footer')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\pendidikan.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('pendidikan', [], true)
+ 9 APPPATH\Controllers\Pendidikan.php(12): view('pendidikan', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendidikan->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidikan))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 10:15:47 --> ErrorException: Undefined variable $biodata
+[Method: GET, Route: pendidikan]
+in APPPATH\Views\layout\footer.php on line 6.
+ 1 APPPATH\Views\layout\footer.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biodata', 'C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/footer', null, true)
+ 5 APPPATH\Views\pendidikan.php(27): CodeIgniter\View\View->include('layout/footer')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\cv-nazwa\\app\\Views\\pendidikan.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('pendidikan', [], true)
+ 9 APPPATH\Controllers\Pendidikan.php(12): view('pendidikan', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendidikan->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidikan))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 10:50:20 --> CodeIgniter\Files\Exceptions\FileNotFoundException: File not found: "C:\laragon\www\cv-nazwa\writable\uploads/Cv-Nazwa Akmalia.pdf"
+[Method: GET, Route: cv/download]
+in SYSTEMPATH\Files\File.php on line 51.
+ 1 SYSTEMPATH\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('C:\\laragon\\www\\cv-nazwa\\writable\\uploads/Cv-Nazwa Akmalia.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(106): CodeIgniter\Files\File->__construct('C:\\laragon\\www\\cv-nazwa\\writable\\uploads/Cv-Nazwa Akmalia.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(745): CodeIgniter\HTTP\DownloadResponse->setFilePath('C:\\laragon\\www\\cv-nazwa\\writable\\uploads/Cv-Nazwa Akmalia.pdf')
+ 4 APPPATH\Controllers\Cv.php(12): CodeIgniter\HTTP\Response->download('Cv-Nazwa Akmalia.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cv->download()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cv))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 10:51:44 --> CodeIgniter\Files\Exceptions\FileNotFoundException: File not found: "C:\laragon\www\cv-nazwa\writable\uploads/cv/Nazwa_Akmalia_CV.pdf"
+[Method: GET, Route: cv/download]
+in SYSTEMPATH\Files\File.php on line 51.
+ 1 SYSTEMPATH\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('C:\\laragon\\www\\cv-nazwa\\writable\\uploads/cv/Nazwa_Akmalia_CV.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(106): CodeIgniter\Files\File->__construct('C:\\laragon\\www\\cv-nazwa\\writable\\uploads/cv/Nazwa_Akmalia_CV.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(745): CodeIgniter\HTTP\DownloadResponse->setFilePath('C:\\laragon\\www\\cv-nazwa\\writable\\uploads/cv/Nazwa_Akmalia_CV.pdf')
+ 4 APPPATH\Controllers\Cv.php(12): CodeIgniter\HTTP\Response->download('Nazwa_Akmalia_CV.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cv->download()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cv))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')
+CRITICAL - 2025-11-13 11:27:02 --> Error: Class "App\Models\SosialMediaModel" not found
+[Method: GET, Route: pendidikan]
+in APPPATH\Controllers\Pendidikan.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendidikan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidikan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\cv-nazwa\\public\\index.php')

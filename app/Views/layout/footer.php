@@ -1,204 +1,94 @@
-<!-- BOOTSTRAP ICONS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<footer class="custom-footer text-center py-4">
+    <p class="footer-desc mb-3">
+        Terima kasih sudah mengunjungi website saya.
+    </p>
 
-<footer class="site-footer">
-  <div class="footer-content">
+    <!-- SOSIAL MEDIA -->
+    <div class="d-flex justify-content-center gap-2 mt-2 flex-wrap">
+      <?php if (!empty($sosial_media)): ?>
+        <?php foreach ($sosial_media as $s): ?>
+          <a href="<?= esc($s['link']); ?>" target="_blank" class="footer-icon">
 
-    <!-- Informasi Kontak -->
-    <div class="footer-section">
-      <h3 class="title">Informasi Kontak</h3>
-      <?php if (isset($biodata)): ?>
-        <p><?= esc($biodata['alamat']); ?></p>
-        <p><?= esc($biodata['telepon']); ?></p>
-        <p><?= esc($biodata['email']); ?></p>
-      <?php else: ?>
-        <p>Data kontak belum tersedia</p>
+            <?php 
+              $p = strtolower($s['platform']);
+              if ($p === 'github') echo '<i class="bi bi-github"></i>';
+              elseif ($p === 'linkedin') echo '<i class="bi bi-linkedin"></i>';
+              else echo '<i class="bi bi-box-arrow-up-right"></i>';
+            ?>
+
+          </a>
+        <?php endforeach; ?>
       <?php endif; ?>
     </div>
 
-    <!-- Sosial Media -->
-    <div class="footer-section">
-      <h3 class="title">Sosial Media</h3>
-      <div class="social-links">
-        <?php if (isset($sosial_media) && !empty($sosial_media)): ?>
-          <?php foreach ($sosial_media as $s): ?>
+    <p class="footer-copy mt-3 mb-0">
+        &copy; <?= date('Y') ?> <strong>Nazwa Akmalia Padla</strong>.
+    </p>
 
-            <a href="<?= esc($s['link']); ?>" target="_blank" class="social-link">
-
-              <?php 
-                $platform = strtolower($s['platform']);
-                if ($platform === 'github') {
-                  echo '<i class="bi bi-github"></i>';
-                } elseif ($platform === 'linkedin') {
-                  echo '<i class="bi bi-linkedin"></i>';
-                } elseif ($platform === 'instagram') {
-                  echo '<i class="bi bi-instagram"></i>';
-                } elseif ($platform === 'facebook') {
-                  echo '<i class="bi bi-facebook"></i>';
-                } elseif ($platform === 'youtube') {
-                  echo '<i class="bi bi-youtube"></i>';
-                } elseif ($platform === 'tiktok') {
-                  echo '<i class="bi bi-tiktok"></i>';
-                } else {
-                  echo '<i class="bi bi-box-arrow-up-right"></i>';
-                }
-              ?>
-
-              <?= esc($s['platform']); ?>
-            </a>
-
-          <?php endforeach; ?>
-        <?php else: ?>
-          <p>Tidak ada data sosial media</p>
-        <?php endif; ?>
-      </div>
-    </div>
-
-  </div>
-
-  <hr class="footer-divider">
-
-  <p class="footer-copy">&copy; <?= date('Y') ?> <strong>Nazwa Akmalia Padla</strong>. All rights reserved.</p>
 </footer>
 
-<script>
-  feather.replace();
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
-
-  const themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-  }
-</script>
 
 <style>
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #1e1e1e;
-    --card-bg: #f9f9f9;
-    --card-bg-alt: #efefef;
-    --border-color: #d0d0d0;
-    --primary-color: #4b7bec;
-  }
 
-  [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #f1f1f1;
-    --card-bg: #222;
-    --card-bg-alt: #333;
-    --border-color: #444;
-    --primary-color: #6c8cff;
-  }
+#bgCanvas { z-index:0!important; }
+.page-content { z-index:10; position:relative; }
+.custom-footer { position:relative; z-index:20; }
 
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Inter', sans-serif;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
 
-  .container {
-    flex: 1;
-  }
+:root {
+  --footer-bg: #ffffff;
+  --footer-text: #222;
+  --footer-icon-bg: #ff7613;
+  --footer-icon-hover: #ff5800;
+}
 
-  /* FOOTER */
-  .site-footer {
-    margin-top: auto;
-    background: var(--card-bg);
-    color: var(--text-color);
-    padding: 2rem 1.5rem;
-    text-align: center;
-    font-size: 1.2rem;
-    border-top: 1px solid var(--border-color);
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
-    transition: background 0.3s ease, color 0.3s ease;
-  }
+.dark-theme {
+  --footer-bg: #0d0d0d;
+  --footer-text: #e5e5e5;
+  --footer-icon-bg: #6c8cff;
+  --footer-icon-hover: #4f6aff;
+}
 
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 900px;
-    margin: auto;
-  }
 
-  .footer-section {
-    min-width: 230px;
-    text-align: left;
-  }
+.custom-footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding-top: 2rem !important;
+  padding-bottom: 1.8rem !important;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
 
-  .footer-section .title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-  }
+.footer-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
-  .footer-section p {
-    margin: 0.2rem 0;
-    line-height: 1.5;
-  }
+.footer-desc {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
 
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-  }
 
-  .social-link {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    text-decoration: none;
-    background: var(--card-bg-alt);
-    color: var(--text-color);
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-  }
+.footer-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--footer-icon-bg);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+}
 
-  .social-link:hover {
-    background: var(--primary-color);
-    color: #fff;
-    transform: translateY(-2px);
-  }
+.footer-icon:hover {
+  background: var(--footer-icon-hover);
+  transform: translateY(-4px);
+}
 
-  .footer-divider {
-    width: 80%;
-    margin: 1.5rem auto;
-    border: none;
-    height: 1px;
-    background: var(--border-color);
-  }
-
-  .footer-copy {
-    margin: 0;
-    font-size: 1.1rem;
-    opacity: 0.75;
-  }
-
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 2rem;
-    }
-
-    .footer-section {
-      text-align: center;
-    }
-  }
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.65;
+}
 </style>

@@ -4,111 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= esc($title ?? 'CV - Nazwa Akmalia Padla') ?></title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
     :root {
       --primary-color: #ff7613;
-      --secondary-color: #ff9d57;
-      --text-color: #b0b0b0;
-      --dark-bg: #121212;
-      --card-bg: #1e1e1e;
-      --light-text: #e0e0e0;
-    }
-
-    :root.light {
-      --primary-color: #ff7613;
-      --secondary-color: #d85a00;
-      --text-color: #444;
-      --dark-bg: #f8f8f8;
+      --text-color: #222;
+      --bg-color: #ffffff;
       --card-bg: #ffffff;
+      --border-color: #e5e5e5;
+      --muted: #555;
       --light-text: #222;
     }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--dark-bg);
-      color: var(--light-text);
-      transition: background 0.4s ease, color 0.4s ease;
-      margin: 0;
-      padding: 0;
+    .dark-theme {
+      --primary-color: #6c8cff;
+      --text-color: #f1f1f1;
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --border-color: #333;
+      --muted: #aaa;
+      --light-text: #fff;
     }
 
-    
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Inter', sans-serif;
+      transition: 0.3s ease;
+    }
+
+    /* Header */
     header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10000 !important;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.9rem 2.5rem; 
-      background: var(--card-bg);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      position: sticky;
-      top: 0;
-      z-index: 999;
     }
 
     .logo {
-      font-size: 1.6rem; 
+      font-size: 1.7rem;
       font-weight: 700;
       color: var(--primary-color);
       text-decoration: none;
     }
 
-    nav {
-      display: flex;
-      gap: 1.5rem;
-    }
-
     nav a {
       text-decoration: none;
-      color: var(--light-text);
-      font-size: 1.2rem; /* 🔽 semula 1.5rem */
+      color: var(--text-color);
+      margin-left: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
-      transition: color 0.3s ease, transform 0.2s ease;
     }
 
     nav a:hover {
       color: var(--primary-color);
-      transform: translateY(-2px);
     }
 
-    /* Tombol tema */
     .theme-btn {
-      background: transparent;
+      background: none;
       border: none;
       cursor: pointer;
-      font-size: 1.5rem; /* 🔽 semula 1.8rem */
-      color: var(--light-text);
-      transition: transform 0.2s ease, color 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .theme-btn:hover {
-      transform: scale(1.15);
-      color: var(--primary-color);
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 0.8rem;
-        text-align: center;
-      }
-
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      nav a {
-        font-size: 1.1rem;
-      }
+      font-size: 1.6rem;
+      color: var(--text-color);
+      margin-left: 1.5rem;
+      padding: 0;
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -116,42 +91,45 @@
 
   <nav>
     <a href="<?= base_url('/') ?>">Home</a>
-    <a href="<?= base_url('pendidikan') ?>">Pendidikan</a>
-    <a href="<?= base_url('pengalaman') ?>">Pengalaman</a>
-    <a href="<?= base_url('keahlian') ?>">Keahlian</a>
-    <a href="<?= base_url('portofolio') ?>">Portofolio</a>
-  </nav>
+    <a href="<?= base_url('/about#pendidikan') ?>">Pendidikan</a>
+    <a href="<?= base_url('/about#pengalaman') ?>">Pengalaman</a>
+    <a href="<?= base_url('/about#keahlian') ?>">Keahlian</a>
+    <a href="<?= base_url('/about#portofolio') ?>">Portofolio</a>
 
-  <!-- Tombol Dark/Light Mode -->
-  <button id="themeToggle" class="theme-btn" title="Ganti Tema">
-    <i data-feather="moon"></i>
-  </button>
+    <button id="themeToggle" class="theme-btn" title="Ganti Tema">
+      <i data-feather="moon"></i>
+    </button>
+  </nav>
 </header>
 
 <script>
   feather.replace();
 
-  const themeBtn = document.getElementById('themeToggle');
   const root = document.documentElement;
+  const themeBtn = document.getElementById("themeToggle");
 
-  // Cek preferensi sebelumnya
-  if (localStorage.getItem('theme') === 'light') {
-    root.classList.add('light');
+  // Ambil preferensi sebelumnya
+  let dark = localStorage.getItem("theme") === "dark";
+  if (dark) {
+    root.classList.add("dark-theme");
     themeBtn.innerHTML = feather.icons.sun.toSvg();
-  } else {
-    themeBtn.innerHTML = feather.icons.moon.toSvg();
   }
 
-  // Ganti tema saat klik
-  themeBtn.addEventListener('click', () => {
-    root.classList.toggle('light');
-    const isLight = root.classList.contains('light');
-    themeBtn.innerHTML = isLight
+  function toggleTheme() {
+    root.classList.toggle("dark-theme");
+    const isDark = root.classList.contains("dark-theme");
+
+    themeBtn.innerHTML = isDark
       ? feather.icons.sun.toSvg()
       : feather.icons.moon.toSvg();
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  });
-</script>
 
-</body>
-</html>
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    // Biar animasi bintang / awan ikut berubah
+    window.dispatchEvent(new CustomEvent("themechange", {
+      detail: { dark: isDark }
+    }));
+  }
+
+  themeBtn.addEventListener("click", toggleTheme);
+</script>
